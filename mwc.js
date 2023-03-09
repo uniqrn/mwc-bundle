@@ -33,5 +33,4 @@ import '@material/mwc-list/mwc-list-item';
 import '@material/mwc-menu';
 import '@material/mwc-ripple';
 import '@material/mwc-snackbar';
-import '@material/mwc-textarea';
 import '@material/mwc-textfield';
