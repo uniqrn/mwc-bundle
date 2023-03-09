@@ -13,7 +13,7 @@ export default [{
 	plugins: [
 		commonjs(),
 		resolve(),
-		minifyHTML(),
+		//minifyHTML(),
 		terser()
 	]
 }];
