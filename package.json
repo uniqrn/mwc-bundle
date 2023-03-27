@@ -1,6 +1,6 @@
 {
     "name": "mwc-bundle",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "Material Components build",
     "main": "dist/mwc.js",
     "dependencies": {
