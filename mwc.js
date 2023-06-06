@@ -11,10 +11,14 @@ import '@material/web/fab/fab.js';
 import '@material/web/list/list.js';
 import '@material/web/list/list-item.js';
 import '@material/web/list/list-item-link.js';
+import '@material/web/menu/menu.js';
+import '@material/web/menu/menu-item.js';
+import '@material/web/menu/menu-item-link.js';
 // Others
 import '@material/web/switch/switch.js';
 import '@material/web/dialog/dialog.js';
 import '@material/web/linearprogress/linear-progress.js';
+import '@material/web/ripple/ripple.js';
 import '@material/web/textfield/filled-text-field.js';
 import '@material/web/textfield/outlined-text-field.js';
 
@@ -22,6 +26,4 @@ import '@material/web/textfield/outlined-text-field.js';
 import '@material/mwc-list';
 import '@material/mwc-list/mwc-list-item';
 import '@material/mwc-menu';
-import '@material/mwc-ripple';
 import '@material/mwc-snackbar';
-import '@material/mwc-textfield';
