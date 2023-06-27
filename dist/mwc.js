@@ -425,7 +425,7 @@ const Ut=x`@media(forced-colors: active){:host{--md-list-item-list-item-disabled
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: Apache-2.0
- */;class Ht extends be{constructor(){super(...arguments),this.headline="",this.supportingText="",this.multiLineSupportingText=!1,this.trailingSupportingText="",this.disabled=!1,this.itemTabIndex=-1,this.active=!1,this.isListItem=!0,this.listItemRole="listitem",this.focusOnActivation=!0,this.isFirstUpdate=!0}willUpdate(e){e.has("active")&&!this.disabled&&(this.active?this.itemTabIndex=0:this.isFirstUpdate||(this.itemTabIndex=-1))}render(){return this.renderListItem(J`
+ */;class Ht extends be{constructor(){super(...arguments),this.headline="",this.supportingText="",this.multiLineSupportingText=!1,this.trailingSupportingText="",this.disabled=!1,this.itemTabIndex=-1,this.active=!1,this.type="listitem",this.isListItem=!0,this.focusOnActivation=!0,this.isFirstUpdate=!0}willUpdate(e){e.has("active")&&!this.disabled&&(this.active?this.itemTabIndex=0:this.isFirstUpdate||(this.itemTabIndex=-1))}render(){return this.renderListItem(J`
       <div class="content-wrapper">
         ${this.renderStart()}
         ${this.renderBody()}
@@ -437,7 +437,7 @@ const Ut=x`@media(forced-colors: active){:host{--md-list-item-list-item-disabled
       <li
         id="item"
         tabindex=${this.disabled?-1:this.itemTabIndex}
-        role=${this.listItemRole}
+        role=${"none"===this.type?te:this.type}
         aria-selected=${this.ariaSelected||te}
         aria-checked=${this.ariaChecked||te}
         class="list-item ${Ne(this.getRenderClasses())}"
@@ -451,7 +451,7 @@ const Ut=x`@media(forced-colors: active){:host{--md-list-item-list-item-disabled
         class="supporting-text ${Ne(this.getSupportingTextClasses())}"
       >${this.supportingText}</span>`}getSupportingTextClasses(){return{"supporting-text--multi-line":this.multiLineSupportingText}}renderEnd(){const e=""!==this.trailingSupportingText?this.renderTrailingSupportingText():"";return J`<div class="end"
       ><slot name="end">${e}</slot></div>`}renderTrailingSupportingText(){return J`<span class="trailing-supporting-text"
-      >${this.trailingSupportingText}</span>`}updated(e){super.updated(e),e.has("active")&&!this.isFirstUpdate&&this.active&&this.focusOnActivation&&this.focus(),this.isFirstUpdate=!1}focus(){this.listItemRoot?.focus?.()}}Je(Ht),r([l()],Ht.prototype,"headline",void 0),r([l()],Ht.prototype,"supportingText",void 0),r([l({type:Boolean})],Ht.prototype,"multiLineSupportingText",void 0),r([l()],Ht.prototype,"trailingSupportingText",void 0),r([l({type:Boolean})],Ht.prototype,"disabled",void 0),r([l({type:Number})],Ht.prototype,"itemTabIndex",void 0),r([l({type:Boolean,reflect:!0})],Ht.prototype,"active",void 0),r([l({type:Boolean,attribute:"md-list-item",reflect:!0})],Ht.prototype,"isListItem",void 0),r([p(".list-item")],Ht.prototype,"listItemRoot",void 0);
+      >${this.trailingSupportingText}</span>`}updated(e){super.updated(e),e.has("active")&&!this.isFirstUpdate&&this.active&&this.focusOnActivation&&this.focus(),this.isFirstUpdate=!1}focus(){this.listItemRoot?.focus?.()}}Je(Ht),r([l()],Ht.prototype,"headline",void 0),r([l()],Ht.prototype,"supportingText",void 0),r([l({type:Boolean})],Ht.prototype,"multiLineSupportingText",void 0),r([l()],Ht.prototype,"trailingSupportingText",void 0),r([l({type:Boolean})],Ht.prototype,"disabled",void 0),r([l({type:Number})],Ht.prototype,"itemTabIndex",void 0),r([l({type:Boolean,reflect:!0})],Ht.prototype,"active",void 0),r([l()],Ht.prototype,"type",void 0),r([l({type:Boolean,attribute:"md-list-item",reflect:!0})],Ht.prototype,"isListItem",void 0),r([p(".list-item")],Ht.prototype,"listItemRoot",void 0);
 /**
  * @license
  * Copyright 2023 Google LLC
@@ -475,11 +475,11 @@ const Gt=x`:host{--_list-item-container-color: var(--md-list-item-list-item-cont
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: Apache-2.0
  */
-class Wt extends Ht{renderListItem(e){return J`
+class Wt extends Ht{constructor(){super(...arguments),this.type="none"}renderListItem(e){return J`
       <a
         id="item"
         tabindex=${this.disabled?-1:this.itemTabIndex}
-        role=${this.listItemRole}
+        role=${"none"===this.type?te:this.type}
         aria-selected=${this.ariaSelected||te}
         aria-checked=${this.ariaChecked||te}
         class="list-item ${Ne(this.getRenderClasses())}"
@@ -583,7 +583,7 @@ const vi=x`@media(forced-colors: active){.list-item{position:relative}:host([sel
  * @license
  * Copyright 2022 Google LLC
  * SPDX-License-Identifier: Apache-2.0
- */;class fi extends Ht{constructor(){super(...arguments),this.isMenuItem=!0,this.keepOpen=!1,this.keepOpenOnClick=!1,this.listItemRole="menuitem"}onClick(){this.keepOpen||this.keepOpenOnClick||this.dispatchEvent(new ei(this,{kind:ii}))}onKeydown(e){if(this.keepOpen)return;const t=e.code;!e.defaultPrevented&&ai(t)&&(e.preventDefault(),this.dispatchEvent(new ei(this,{kind:ri,key:t})))}}r([l({type:Boolean,attribute:"md-menu-item",reflect:!0})],fi.prototype,"isMenuItem",void 0),r([l({type:Boolean,attribute:"keep-open"})],fi.prototype,"keepOpen",void 0);
+ */;class fi extends Ht{constructor(){super(...arguments),this.isMenuItem=!0,this.keepOpen=!1,this.keepOpenOnClick=!1,this.type="menuitem"}onClick(){this.keepOpen||this.keepOpenOnClick||this.dispatchEvent(new ei(this,{kind:ii}))}onKeydown(e){if(this.keepOpen)return;const t=e.code;!e.defaultPrevented&&ai(t)&&(e.preventDefault(),this.dispatchEvent(new ei(this,{kind:ri,key:t})))}}r([l({type:Boolean,attribute:"md-menu-item",reflect:!0})],fi.prototype,"isMenuItem",void 0),r([l({type:Boolean,attribute:"keep-open"})],fi.prototype,"keepOpen",void 0);
 /**
   * @license
   * Copyright 2022 Google LLC
