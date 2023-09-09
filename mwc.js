@@ -13,6 +13,8 @@ import '@material/web/list/list-item.js';
 import '@material/web/menu/menu.js';
 import '@material/web/menu/menu-item.js';
 // Others
+import '@material/web/checkbox/checkbox.js';
+import '@material/web/radio/radio.js';
 import '@material/web/switch/switch.js';
 import '@material/web/dialog/dialog.js';
 import '@material/web/progress/linear-progress.js';
