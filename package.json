@@ -1,11 +1,9 @@
 {
     "name": "mwc-bundle",
-    "version": "0.2.6",
+    "version": "0.2.7",
     "description": "Material Components build",
     "main": "dist/mwc.js",
     "dependencies": {
-        "@material/mwc-list": "^0.25.3",
-        "@material/mwc-menu": "^0.25.3",
         "@material/mwc-snackbar": "^0.25.3",
         "@material/web": "^1.0.0-pre.17"
     },

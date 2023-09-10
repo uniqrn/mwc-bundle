@@ -23,7 +23,4 @@ import '@material/web/textfield/filled-text-field.js';
 import '@material/web/textfield/outlined-text-field.js';
 
 // Classic mwc components
-import '@material/mwc-list';
-import '@material/mwc-list/mwc-list-item';
-import '@material/mwc-menu';
 import '@material/mwc-snackbar';
