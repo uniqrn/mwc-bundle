@@ -1,11 +1,11 @@
 {
     "name": "mwc-bundle",
-    "version": "0.2.7",
+    "version": "0.3",
     "description": "Material Components build",
     "main": "dist/mwc.js",
     "dependencies": {
         "@material/mwc-snackbar": "^0.25.3",
-        "@material/web": "^1.0.0-pre.17"
+        "@material/web": "^1.0"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^22.0.0",
@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/material-components/material-web.git"
+        "url": "https://github.com/uniqrn/mwc-bundle.git"
     },
     "author": "Unicorn Research Ltd.",
     "license": "Apache License 2.0"
