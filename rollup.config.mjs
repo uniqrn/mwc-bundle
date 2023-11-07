@@ -1,7 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve';
-import minifyHTML from 'rollup-plugin-minify-html-literals';
 import commonjs from '@rollup/plugin-commonjs';
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 
 export default [{
 	input: 'mwc.js',
@@ -13,7 +12,6 @@ export default [{
 	plugins: [
 		commonjs(),
 		resolve(),
-		//minifyHTML(),
 		terser()
 	]
 }];
