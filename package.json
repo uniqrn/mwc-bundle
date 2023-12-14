@@ -5,7 +5,7 @@
     "main": "dist/mwc.js",
     "dependencies": {
         "@material/mwc-snackbar": "^0.25.3",
-        "@material/web": "^1.0"
+        "@material/web": "^1.1"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^25",
