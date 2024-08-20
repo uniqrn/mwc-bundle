@@ -1,11 +1,11 @@
 {
     "name": "mwc-bundle",
-    "version": "0.3",
+    "version": "0.4",
     "description": "Material Components build",
     "main": "dist/mwc.js",
     "dependencies": {
         "@material/mwc-snackbar": "^0.25.3",
-        "@material/web": "^1.2"
+        "@material/web": "^2.0"
     },
     "devDependencies": {
         "@rollup/plugin-commonjs": "^25",
