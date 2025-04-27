@@ -5,13 +5,13 @@
     "main": "dist/mwc.js",
     "dependencies": {
         "@material/mwc-snackbar": "^0.25.3",
-        "@material/web": "^2.0"
+        "@material/web": "^2.3.0"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.2",
-        "@rollup/plugin-node-resolve": "^16.0.0",
+        "@rollup/plugin-commonjs": "^28.0.3",
+        "@rollup/plugin-node-resolve": "^16.0.1",
         "@rollup/plugin-terser": "^0.4.4",
-        "rollup": "^4",
+        "rollup": "^4.40.0",
         "rollup-plugin-esbuild": "^6"
     },
     "scripts": {
