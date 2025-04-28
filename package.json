@@ -5,7 +5,6 @@
     "main": "dist/mwc.js",
     "dependencies": {
         "@maicol07/material-web-additions": "^1.7.0",
-        "@material/mwc-snackbar": "^0.25.3",
         "@material/web": "^2.3.0"
     },
     "devDependencies": {

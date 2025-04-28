@@ -42,6 +42,3 @@ import '@material/web/tabs/secondary-tab.js';
 
 // Material Web Additions
 import '@maicol07/material-web-additions/snackbar/snackbar.js';
-
-// Classic mwc components
-import '@material/mwc-snackbar';
