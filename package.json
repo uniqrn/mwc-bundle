@@ -1,18 +1,18 @@
 {
     "name": "mwc-bundle",
-    "version": "0.5",
+    "version": "2.4",
     "description": "Material Components build",
     "main": "dist/mwc.js",
     "dependencies": {
-        "@maicol07/material-web-additions": "^1.7.0",
-        "@material/web": "^2.3.0"
+        "@maicol07/material-web-additions": "^1.8.0",
+        "@material/web": "^2.4.1"
     },
     "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.3",
-        "@rollup/plugin-node-resolve": "^16.0.1",
+        "@rollup/plugin-commonjs": "^28.0.9",
+        "@rollup/plugin-node-resolve": "^16.0.3",
         "@rollup/plugin-terser": "^0.4.4",
-        "rollup": "^4.40.0",
-        "rollup-plugin-esbuild": "^6"
+        "rollup": "^4.52.5",
+        "rollup-plugin-esbuild": "^6.2.1"
     },
     "scripts": {
         "build": "rollup -c"
